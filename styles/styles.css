@@ -98,7 +98,20 @@ body {
 
 
 /*  Chris  */
+.demo-intro {
+  margin: 2rem 1rem;
+}
+#current-weather {
+    visibility: hidden;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border: #000000 solid 3px;
+    border-radius: 10px;
+    max-width: 17.5rem;
 
+@media (min-width: 37.5rem) {
+  max-width: 50%;
+}
 
 /*   Stanley  */
 

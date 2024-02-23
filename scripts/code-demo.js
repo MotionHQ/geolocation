@@ -1,4 +1,5 @@
 const googleLocation = document.getElementById('get-location-button');
+const weatherElement = document.getElementById('current-weather');
 
 // Function to fetch weather data from the OpenWeather API
 function geoWeather(latitude, longitude) {
@@ -26,8 +27,10 @@ function geoWeather(latitude, longitude) {
             //this is the current humidity
             const humidity = data.main.humidity;
 
+            //show the div holding the weather information
+            weatherElement.style.visibility = 'visible';  
+
             // Update the HTML with weather information
-            const weatherElement = document.getElementById('current-weather');
             weatherElement.innerHTML = `
             <h2>${locationName}</h2>
             <p>Current Temperature: ${currentTemperature}°C</p>
@@ -65,4 +68,3 @@ function error() {
 googleLocation.addEventListener('click', () => {
     getUserLocation(); 
 });
-4

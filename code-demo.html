@@ -4,10 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Weather Information</title>
+<link rel="stylesheet" href="styles/normalize-fwd.css">
+<link rel="stylesheet" href="styles/styles.css"/>
+
 </head>
 <body>
   <h1>Geolocation Code Demo</h1>
-  <section>
+  <section class="demo-intro">
     <h2>How it works</h2>
     <h3>Geolocation Request (Google API)</h3>
     <p>After pressing the button, the application first references the Google Geolocation API to determine your current latitude (distance north or south of the equator) and longitude (distance east or west of Greenwich, England). These are based on your device's IP address or other available location data.
@@ -22,7 +25,9 @@
     <p>You can now view the weather information presented on the web page, providing you with current weather conditions for your current location.</p>
   <button id="get-location-button">See how it works!</button>
 </section>
-  <section id="current-weather"></section>
+  <section id="current-weather">
+
+  </section>
 
   <script src="scripts/code-demo.js"></script> <!-- Include your JavaScript file -->
 </body>
