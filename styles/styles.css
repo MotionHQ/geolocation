@@ -101,6 +101,21 @@ body {
 .demo-intro {
   margin: 2rem 1rem;
 }
+#restart-button {
+  visibility: hidden;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center; 
+  margin-bottom: 1.5rem;
+}
+
+.buttons {
+  /* Add styles for your buttons */
+  margin: 0 5px; /* Add some spacing between buttons if needed */
+}
+
 #current-weather {
     visibility: hidden;
     margin: 0 auto;
@@ -108,9 +123,12 @@ body {
     border: #000000 solid 3px;
     border-radius: 10px;
     max-width: 17.5rem;
+}
 
 @media (min-width: 37.5rem) {
-  max-width: 50%;
+  .current-weather{
+    max-width: 50%;
+  }
 }
 
 /*   Stanley  */

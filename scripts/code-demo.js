@@ -1,5 +1,6 @@
 const googleLocation = document.getElementById('get-location-button');
 const weatherElement = document.getElementById('current-weather');
+const restart = document.getElementById('restart-button')
 
 // Function to fetch weather data from the OpenWeather API
 function geoWeather(latitude, longitude) {
@@ -36,7 +37,8 @@ function geoWeather(latitude, longitude) {
             <p>Current Temperature: ${currentTemperature}°C</p>
             <p>Feels Like: ${perceivedTemperature}°C</p>
             <p>Predicted Maximum Temperature: ${maxTemperature}°C</p>
-            <p>Humidity: ${humidity}%</p>`;
+            <p>Humidity: ${humidity}%</p>
+            <button id="restart-button">Try again</button>`;
         })
         .catch(error => {
             console.error('Error fetching weather data:', error);
@@ -64,7 +66,38 @@ function error() {
     console.error('Unable to retrieve your location');
 }
 
+//create a function to reset the current weather box if the user wants to run the APIs again
+function resetWeatherBox() {
+    //hide the div holding the weather information
+    weatherElement.style.visibility = 'hidden';  
+
+    //set the latitude and longitude values to ''
+    longitude = '';
+    latitude = '';
+
+    //make the get-location-button visible
+    googleLocation.style.visibility = 'visible';
+    //hide the Reset button
+    restart.style.visibility = 'hidden';
+}
+
 // Call the function to get the user's location when the button is clicked
 googleLocation.addEventListener('click', () => {
     getUserLocation(); 
+    //hide the See how it works! button
+    googleLocation.style.visibility = 'hidden';
+    //make the Reset button visible
+    // restart.style.visibility = 'visible';
+
+    //delay the visibilty for several seconds while the API loads the weather information
+    setTimeout(() => {
+        restart.style.visibility = 'visible';
+    }, 6000);
 });
+
+restart.addEventListener('click', () => {
+    resetWeatherBox();
+
+});
+
+
