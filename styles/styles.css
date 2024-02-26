@@ -61,15 +61,15 @@ body {
   a,
   a:visited {
     text-decoration: none;
-    color: #6c8be9;
+    color: #ECAD8E;
   }
   a:hover,
   a:focus {
-    color: #ec8d8d;
+    color: #ECAD8E;
   }
   a:active {
     text-decoration: underline;
-    color: #ec8d8d;
+    color: #ECAD8E;
   }
   a:focus {
     outline: 2px dotted #000000;
@@ -91,11 +91,121 @@ body {
 /* Header
 --------------------------------------------- */
 /*  Priya */
+/* navigation menu */
 
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: #0b2f41;
+  width: 100%;
+  padding: 0 1rem;
+  display: flex;
+  gap: 25rem;
+ align-items: center;
+}
+
+.site-header h2{
+    color: #7EA8C8;
+    font-size: 2.5rem;
+}
+
+.site-navigation ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: none;
+  position: absolute;
+  top: 4.5rem;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  background-color: #0b4461;
+}
+
+.site-navigation.toggled ul {
+  display: block;
+}
+
+.site-navigation a {
+  display: block;
+  padding: 2rem;
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-size:2.1rem;
+  text-decoration: none;
+  color: #ECAD8E;
+}
+
+.menu-toggle {
+  display: block;
+  background-color: transparent;
+  border: 0;
+  padding: 1rem;
+}
+
+.menu-toggle:focus {
+  border: 0;
+  outline: 1px dotted;
+}
+
+@media (min-width: 50em) {
+  .menu-toggle {
+    display: none;
+  }
+
+  .site-header{
+    height: 100%;
+    width: 20rem;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    display: block;
+    
+    
+  }
+
+ .site-header h2{
+  font-size: 3rem;
+  text-shadow: 2px 1px #b5d7f0;
+ 
+ }
+
+  .site-navigation ul,
+  .site-navigation.toggled ul {
+   
+     display: block;
+     
+     background-color: #0b2f41;
+     margin-top: 2rem;
+     margin-left: 1rem;
+  }
+
+  .site-navigation a {
+    padding: .75rem;
+    font-size: 1.5rem;
+    color: #ffffff;
+   
+  }
+  .site-navigation a:hover{
+    color: #ECAD8E;
+  }
+  
+}
 
 /* Main
 --------------------------------------------- */
+.main-style {
+  margin-top: 7rem;
+}
 
+
+@media (min-width: 50em) {
+.main-style{
+  margin-left:22rem;
+  margin-top: 0;
+}
+}
 /*  Ian  */
 
 
