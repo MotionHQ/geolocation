@@ -30,6 +30,11 @@ body {
     line-height: 1.5;
     color: #282828;
     background-color: #62a1c7;
+    background-image: url(../images/cloud-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
   }
   h1,
   h2,
@@ -103,7 +108,7 @@ body {
   padding: 0 1rem;
   display: flex;
   gap: 25rem;
- align-items: center;
+  align-items: center;
 }
 
 .site-header h2{
