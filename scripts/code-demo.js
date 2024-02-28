@@ -57,6 +57,7 @@ function getUserLocation() {
 function success(position) {
     const latitude = position.coords.latitude;
     const longitude = position.coords.longitude;
+    console.log(`Your latitude is: ${latitude}. Your longitude is: ${longitude}.`)
 
     // Once you have the user's location, retrieve the weather data
     geoWeather(latitude, longitude);
