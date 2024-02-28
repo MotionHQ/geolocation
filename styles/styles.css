@@ -267,35 +267,48 @@ section h2 {
   padding: 10px;
 }
 
-#geo-where h3 {
-  background-color: #FEE953;
-  margin: 0;
-  padding: 10px;
-  font-size: 1.25rem;
-}
+
 
 .geo-where {
   display: flex;
   flex-wrap: wrap;
 }
 
+#geo-where h2 {
+  text-align: center;
+}
+
+#geo-where h3 {
+  background-color: #FEE953;
+  margin: 0;
+  padding: 10px;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
 .geo-where img {
   flex: 1;
   width: 100%;
+}
+
+.geo-where > * {
+  flex-basis: calc(50% - 0rem);
+  margin: 0;
+}
+
+.geo-where img {
+  flex: 1;
+  width: 50%;
   height: auto;
 }
 
-.geo-where article {
-  flex: 1;
+
+li {
+  list-style-type: none;
 }
 
-.geo-where img,
-  .geo-where article {
-    flex-basis: calc(50% - 0.5rem); /* Make each item take up half the width with margin */
-  }
-
+/* Bottom of 50em media query */
 }
-
 
 
 /*  Stanley */
