@@ -24,12 +24,18 @@
 --------------------------------------------- */
 
 body {
-    font-family: "Montserrat", Arial, Helvetica, sans-serif;
-    font-size: 1rem;
+    font-family: "darkmode-off", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
     font-weight: 400;
     line-height: 1.5;
-    color: #282828;
-    background-color: #62a1c7;
+    color: #ffffff;
+    background-image: url(../images/cloud-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
   }
   h1,
   h2,
@@ -37,9 +43,11 @@ body {
   h4,
   h5,
   h6 {
-    font-family: "Kalnia", "Times New Roman", Times, serif;
-    margin: 0.5em 0;
+    font-family: "rift", Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-style: normal;
     font-size: 1.75rem;
+    color: #1F3D73;
   }
   p {
     margin: 0 0 1.5em;
@@ -47,10 +55,7 @@ body {
 
   /* Elements
   --------------------------------------------- */
-  section {
-    padding: 0 1rem;
-  }
-
+ 
   img {
     display: block;
     max-width: 50rem;
@@ -61,15 +66,15 @@ body {
   a,
   a:visited {
     text-decoration: none;
-    color: #6c8be9;
+    color: #95d6ea;
   }
   a:hover,
   a:focus {
-    color: #ec8d8d;
+    color: #95d6ea;
   }
   a:active {
     text-decoration: underline;
-    color: #ec8d8d;
+    color: #95d6ea;
   }
   a:focus {
     outline: 2px dotted #000000;
@@ -91,12 +96,220 @@ body {
 /* Header
 --------------------------------------------- */
 /*  Priya */
+/* navigation menu */
 
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: #1F3D73;
+  width: 100%;
+  padding: 0 1rem;
+  display: flex;
+  gap: 25rem;
+  align-items: center;
+}
+
+.site-header h2{
+    color: #FEE953;
+    font-size: 2.5rem;
+}
+
+.site-navigation ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: none;
+  position: absolute;
+  top: 4.5rem;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  background-color: #1F3D73;
+}
+
+.site-navigation.toggled ul {
+  display: block;
+}
+
+.site-navigation a {
+  display: block;
+  padding: 2rem;
+  font-family: "rift", Georgia, Times, sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size:2.1rem;
+  text-decoration: none;
+  color: #FEE953;
+}
+
+.menu-toggle {
+  display: block;
+  background-color: transparent;
+  border: 0;
+  padding: 1rem;
+}
+
+.menu-toggle:focus {
+  border: 0;
+  outline: 1px dotted;
+}
+
+@media (min-width: 50em) {
+  .menu-toggle {
+    display: none;
+  }
+
+  .site-header{
+    height: 100%;
+    width: 20rem;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    display: block;
+    
+    
+  }
+
+ .site-header h2{
+  font-size: 3rem;
+  text-shadow: 2px 1px #1F3D73;
+ 
+ }
+
+  .site-navigation ul,
+  .site-navigation.toggled ul {
+   
+     display: block;
+     
+     background-color: #1F3D73;
+     margin-top: 2rem;
+     margin-left: 1rem;
+  }
+
+  .site-navigation a {
+    padding: .75rem;
+    font-size: 1.5rem;
+    color: #ffffff;
+   
+  }
+  .site-navigation a:hover{
+    color: #1F3D73;
+    background-color: #FEE953;
+  }
+  
+}
 
 /* Main
 --------------------------------------------- */
+.main-style {
+  margin-top: 7rem;
+}
+
+
+@media (min-width: 50em) {
+.main-style{
+  margin: 0rem 2rem 0 22rem;
+}
 
 /*  Ian  */
+
+.site-header h2 {
+  padding-left: 1rem;
+}
+
+.main-style h1 {
+  font-size: 8rem;
+  background-color: #1F3D73;
+  color: #FEE953;
+  text-align: center;
+}
+
+.content-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.group-1 {
+  flex: 1;
+  color: #ffffff;
+  background-color: #1F3D73;
+  margin: 0;
+}
+
+.group-1 h2 {
+  color: #1F3D73;
+  background-color: #FEE953;
+  margin: 0;
+  padding: 10px 20px;
+}
+
+p {
+  padding: 20px;
+}
+
+#geo-why {
+  background-color: #1F3D73;
+}
+
+#geo-why,
+#geo-where,
+#pros-cons,
+#geo-ref {
+  background-color: #1F3D73;
+}
+
+section h2 {
+  background-color: #FEE953;
+  margin: 0;
+  padding: 10px;
+}
+
+
+
+.geo-where {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#geo-where h2 {
+  text-align: center;
+}
+
+#geo-where h3 {
+  background-color: #FEE953;
+  margin: 0;
+  padding: 10px;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.geo-where img {
+  flex: 1;
+  width: 100%;
+}
+
+.geo-where > * {
+  flex-basis: calc(50% - 0rem);
+  margin: 0;
+}
+
+.geo-where img {
+  flex: 1;
+  width: 50%;
+  height: auto;
+}
+
+
+li {
+  list-style-type: none;
+}
+
+/* Bottom of 50em media query */
+}
 
 
 /*  Stanley */
