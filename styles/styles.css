@@ -24,12 +24,13 @@
 --------------------------------------------- */
 
 body {
-    font-family: "Montserrat", Arial, Helvetica, sans-serif;
-    font-size: 1rem;
+    font-family: "darkmode-off", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
     font-weight: 400;
     line-height: 1.5;
-    color: #282828;
-    background-color: #62a1c7;
+    color: #ffffff;
     background-image: url(../images/cloud-bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -42,9 +43,11 @@ body {
   h4,
   h5,
   h6 {
-    font-family: "Kalnia", "Times New Roman", Times, serif;
-    margin: 0.5em 0;
+    font-family: "rift", Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-style: normal;
     font-size: 1.75rem;
+    color: #1F3D73;
   }
   p {
     margin: 0 0 1.5em;
@@ -52,10 +55,7 @@ body {
 
   /* Elements
   --------------------------------------------- */
-  section {
-    padding: 0 1rem;
-  }
-
+ 
   img {
     display: block;
     max-width: 50rem;
@@ -66,15 +66,15 @@ body {
   a,
   a:visited {
     text-decoration: none;
-    color: #ECAD8E;
+    color: #95d6ea;
   }
   a:hover,
   a:focus {
-    color: #ECAD8E;
+    color: #95d6ea;
   }
   a:active {
     text-decoration: underline;
-    color: #ECAD8E;
+    color: #95d6ea;
   }
   a:focus {
     outline: 2px dotted #000000;
@@ -103,7 +103,7 @@ body {
   top: 0;
   left: 0;
   z-index: 1000;
-  background-color: #0b2f41;
+  background-color: #1F3D73;
   width: 100%;
   padding: 0 1rem;
   display: flex;
@@ -112,7 +112,7 @@ body {
 }
 
 .site-header h2{
-    color: #7EA8C8;
+    color: #FEE953;
     font-size: 2.5rem;
 }
 
@@ -126,7 +126,7 @@ body {
   left: 0;
   right: 0;
   z-index: 2;
-  background-color: #0b4461;
+  background-color: #1F3D73;
 }
 
 .site-navigation.toggled ul {
@@ -136,10 +136,12 @@ body {
 .site-navigation a {
   display: block;
   padding: 2rem;
-  font-family: Georgia, Times, "Times New Roman", serif;
+  font-family: "rift", Georgia, Times, sans-serif;
+  font-weight: 700;
+  font-style: italic;
   font-size:2.1rem;
   text-decoration: none;
-  color: #ECAD8E;
+  color: #FEE953;
 }
 
 .menu-toggle {
@@ -172,7 +174,7 @@ body {
 
  .site-header h2{
   font-size: 3rem;
-  text-shadow: 2px 1px #b5d7f0;
+  text-shadow: 2px 1px #1F3D73;
  
  }
 
@@ -181,7 +183,7 @@ body {
    
      display: block;
      
-     background-color: #0b2f41;
+     background-color: #1F3D73;
      margin-top: 2rem;
      margin-left: 1rem;
   }
@@ -193,7 +195,7 @@ body {
    
   }
   .site-navigation a:hover{
-    color: #ECAD8E;
+    color: #FEE953;
   }
   
 }
@@ -207,11 +209,93 @@ body {
 
 @media (min-width: 50em) {
 .main-style{
-  margin-left:22rem;
-  margin-top: 0;
+  margin: 0rem 2rem 0 22rem;
 }
-}
+
 /*  Ian  */
+
+.site-header h2 {
+  padding-left: 1rem;
+}
+
+.main-style h1 {
+  font-size: 8rem;
+  background-color: #1F3D73;
+  color: #FEE953;
+  text-align: center;
+}
+
+.content-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.group-1 {
+  flex: 1;
+  color: #ffffff;
+  background-color: #1F3D73;
+  margin: 0;
+}
+
+.group-1 h2 {
+  color: #1F3D73;
+  background-color: #FEE953;
+  margin: 0;
+  padding: 10px 20px;
+}
+
+p {
+  padding: 20px;
+}
+
+#geo-why {
+  background-color: #1F3D73;
+}
+
+#geo-why,
+#geo-where,
+#pros-cons,
+#geo-ref {
+  background-color: #1F3D73;
+}
+
+section h2 {
+  background-color: #FEE953;
+  margin: 0;
+  padding: 10px;
+}
+
+#geo-where h3 {
+  background-color: #FEE953;
+  margin: 0;
+  padding: 10px;
+  font-size: 1.25rem;
+}
+
+.geo-where {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.geo-where img {
+  flex: 1;
+  width: 100%;
+  height: auto;
+}
+
+.geo-where article {
+  flex: 1;
+}
+
+.geo-where img,
+  .geo-where article {
+    flex-basis: calc(50% - 0.5rem); /* Make each item take up half the width with margin */
+  }
+
+}
+
 
 
 /*  Stanley */
