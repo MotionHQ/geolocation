@@ -195,7 +195,8 @@ body {
    
   }
   .site-navigation a:hover{
-    color: #FEE953;
+    color: #1F3D73;
+    background-color: #FEE953;
   }
   
 }
