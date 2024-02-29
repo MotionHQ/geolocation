@@ -343,6 +343,11 @@ a:focus {
     padding: 1rem;
   }
 
+  .pros-cons h4 {
+    color: #1f3d73;
+    padding-left: 20px;
+  }
+
   li::marker {
     color: #fee953;
   }
