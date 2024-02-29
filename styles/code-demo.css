@@ -253,3 +253,57 @@ h6 {
 .footer p {
   padding: 0;
 }
+
+/* Add this media query at the end of your CSS code */
+@media (max-width: 800px) {
+  body {
+    margin: 0;
+    font-size: 0.8rem; /* Adjust the font size for better readability on smaller screens */
+  }
+
+  .site-header {
+    padding: 0.5rem; /* Reduce padding for the header */
+  }
+
+  .site-header h2 {
+    font-size: 1.5rem; /* Adjust header font size */
+  }
+
+  .site-navigation ul {
+    top: 3rem; /* Adjust top position of the navigation menu */
+  }
+
+  .container {
+    flex-basis: 100%; /* Make containers full width on smaller screens */
+    width: 100%;
+    margin-bottom: 10px; /* Reduce margin bottom for containers */
+  }
+
+  .current-weather {
+    width: 100%; /* Make current weather section full width */
+    margin: 10px 0; /* Adjust margin for better spacing */
+    padding: 10px; /* Reduce padding for current weather section */
+    font-size: 0.9rem; /* Adjust font size for better readability */
+  }
+
+  .current-weather h2 {
+    font-size: 3rem; /* Adjust heading font size */
+  }
+
+  .current-weather p {
+    font-size: 0.9rem; /* Adjust paragraph font size */
+    width: 100%; /* Make paragraphs full width */
+  }
+
+  .footer {
+    flex-direction: column; /* Change footer layout to column */
+    align-items: center; /* Center align footer content */
+  }
+
+  .footer h2,
+  .footer p {
+    margin: 0.5rem 0; /* Adjust margin for footer elements */
+    padding: 5px; /* Add padding for footer elements */
+    text-align: center; /* Center align footer text */
+  }
+}
