@@ -4,244 +4,384 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Geolocation</title>
-    <link rel="stylesheet" href="styles/normalize-fwd.css">
+    <link rel="stylesheet" href="styles/normalize-fwd.css" />
     <link rel="stylesheet" href="styles/styles.css" />
-    <link rel="stylesheet" href="https://use.typekit.net/zyh5zzd.css">
+    <link rel="stylesheet" href="https://use.typekit.net/zyh5zzd.css" />
   </head>
 
   <body>
     <header>
-        <!-- Priya ------------------------->
-        <header class="site-header">
-            
-            <h2>WEB API</h2>
-          
-          <nav class="site-navigation" id="site-navigation">
-            <button
-              class="menu-toggle"
-              aria-controls="header-menu"
-              aria-expanded="false"
-              aria-label="Menu Toggle"
+      <!-- Priya ------------------------->
+      <header class="site-header">
+        <h2>WEB API</h2>
+
+        <nav class="site-navigation" id="site-navigation">
+          <button
+            class="menu-toggle"
+            aria-controls="header-menu"
+            aria-expanded="false"
+            aria-label="Menu Toggle"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="36"
+              height="36"
+              viewBox="0 0 24 24"
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="36"
-                height="36"
-                viewBox="0 0 24 24"
-              >
-                <title>Menu Icon</title>
-                <path
-                  d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"
-                ></path>
-              </svg>
-            </button>
-    
-            <ul class="nav-menu" id="header-menu">
-              <li><a href="#">Geolocation</a></li>
-              <li><a href="#api">What is an API?</a></li>
-              <li><a href="#geo-what">What is Geolocation</a></li>
-              <li><a href="#geo-do">What does it do?</a></li>
-              <li><a href="#geo-why">Why would you use it?</a></li>
-              <li><a href="#geo-where">Where would you use it?</a></li>
-              <li><a href="#pros-cons">Pros and Cons</a></li>
-              <li><a href="#code-demo">Code Demo</a></li>
-              <li><a href="#geo-ref">References</a></li>
-            </ul>
-          </nav>
-        </header>
+              <title>Menu Icon</title>
+              <path
+                d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"
+              ></path>
+            </svg>
+          </button>
 
-
+          <ul class="nav-menu" id="header-menu">
+            <li><a href="#">Geolocation</a></li>
+            <li><a href="#api">What is an API?</a></li>
+            <li><a href="#geo-what">What is Geolocation</a></li>
+            <li><a href="#geo-do">What does it do?</a></li>
+            <li><a href="#geo-why">Why would you use it?</a></li>
+            <li><a href="#geo-where">Where would you use it?</a></li>
+            <li><a href="#pros-cons">Pros and Cons</a></li>
+            <li><a href="#code-demo">Code Demo</a></li>
+            <li><a href="#geo-ref">References</a></li>
+          </ul>
+        </nav>
+      </header>
     </header>
 
     <main class="main-style">
-        <!-- Ian ----------------------------->
+      <!-- Ian ----------------------------->
       <h1>Geolocation</h1>
 
       <div class="content-container">
-      <section id="api" class="group-1">
-        <h2>What is an API?</h2>
-        <p>
-          APIs, or <em>application programming interfaces</em> are mechanisms that allow two software components to communicate with each other using a set of definitions and protocols.  A Web API is an application processing interface between a web server and web browser.  All web services are APIs but not all APIs are web services.
-        </p>
-      </section>
+        <section id="api" class="group-1">
+          <h2>What is an API?</h2>
+          <p>
+            APIs, or <em>application programming interfaces</em> are mechanisms
+            that allow two software components to communicate with each other
+            using a set of definitions and protocols. A Web API is an
+            application processing interface between a web server and web
+            browser. All web services are APIs but not all APIs are web
+            services.
+          </p>
+        </section>
 
-      <section id="geo-what" class="group-1">
-        <h2>What is Geolocation?</h2>
-        <p>
-          Geolocation is an API that has the ability to track a device's whereabouts using GPS, cell phone towers, WiFi, or a combination of these.  Using positioning systems, geolocation can track a devices whereabouts down to latitude and longitude coordinates.  This can be used by both mobile and desktop devices.
-        </p>
-      </section>
+        <section id="geo-what" class="group-1">
+          <h2>What is Geolocation?</h2>
+          <p>
+            Geolocation is an API that has the ability to track a device's
+            whereabouts using GPS, cell phone towers, WiFi, or a combination of
+            these. Using positioning systems, geolocation can track a devices
+            whereabouts down to latitude and longitude coordinates. This can be
+            used by both mobile and desktop devices.
+          </p>
+        </section>
 
+        <!-- Stanley ----------------------------------->
 
-      <!-- Stanley ----------------------------------->
+        <section id="geo-do" class="group-1">
+          <h2>What does it do?</h2>
+        </section>
 
+        <!-- Priya ---------------------------------->
 
-      <section id="geo-do" class="group-1">
-        <h2>What does it do?</h2>
-      </section>
+        <section id="geo-why">
+          <h2>Why would you use it?</h2>
+          <p>
+            Geolocation serves in a multitude of contexts. The government and
+            police use it for security purposes, such as unmanned aerial
+            vehicles (UAVs) or ankle bracelets, which — when you think about the
+            fact that neither type of data collection is precise — raises some
+            unsettling implications. But, on the lighter side, some companies
+            use it to change the way we play games by combining it with
+            augmented reality (interacting with virtual elements based on
+            geolocation), like Ingress and Pokémon Go. It opens up the
+            possibility for reviving Where in the World is Carmen Sandiego,
+            Where’s Waldo, or even The Oregon Trail.
+          </p>
+          <p>
+            We use geolocation to plot courses, track elevation changes, see
+            location history, find nearby tire shops, tag images on social
+            media, check in to places, get the local weather, etc. We also use
+            it every day to make our lives easier, to interact with other
+            people, to solve problems, to set goals, to track anything.
+          </p>
+          <p>
+            Geolocation is so much a part of our lives already, and companies
+            are sure to keep harnessing it to improve our online experiences:
+          </p>
+          <ul>
+            <li>
+              A delivery food chain could use it for potential expansion by
+              seeing how many people from a city or region visit its website.
+            </li>
+            <li>
+              A hospital network could provide its closest emergency room to
+              website visitors based on their locations.
+            </li>
+            <li>
+              A global company could redirect all country-specific website
+              visitors to country-specific pages.
+            </li>
+            <li>
+              A city tourism organization could display location-based content
+              depending on where website visitors are in the city.
+            </li>
+          </ul>
 
+          <p>
+            Whatever the purpose, companies will continue to use geolocation to
+            improve their websites or marketing. As technology improves, the
+            visitor engagement can only increase, making each visit more
+            meaningful and effective than the last, simply based on a little
+            thing like location.
+          </p>
+        </section>
 
-      <!-- Priya ---------------------------------->
+        <!-- Chris --------------------------------->
 
+        <section id="geo-where">
+          <h2>Where would you use it?</h2>
+          <div class="geo-where">
+            <!-- image source: https://www.pexels.com/search/package%20delivery/ -->
+            <img
+              src="images/geolocation-delivery.jpg"
+              alt="Boxes on a dolly are being loaded in a van"
+            />
+            <article>
+              <h3>Anywhere people want to play</h3>
+              <p>
+                In 2016, many people may have never heard the term geolocation,
+                but geolocated games burst onto the scene with the explosive
+                popularity of Pokemon GO.
+              </p>
+              <p>
+                Geolocation allows people to embark upon virtual treasures hunts
+                searching for characters that are in placed in the user's
+                location.
+              </p>
+              <p>
+                Most, if not all, of these types of games rely on the use of
+                mobile phones, and make use of geotagged locations (or features
+                for which geographical identification metadata has been added).
+                These geotagged locations and then placed inside a map interface
+                with which the player interacts.
+              </p>
+              <p>
+                Other games that take advantage of geolocation APIs include
+                Pikmin Bloom, Catan: World Explorers, Minecraft Earth, and Let's
+                Hunt Monsters.
+              </p>
+            </article>
+            <article>
+              <h3>Anywhere a package needs to be delivered</h3>
+              <p>
+                It is no secret that since the start of the COVID-19 pandemic in
+                2020, delivery services have become an integral part of most
+                peoples' lives.
+              </p>
+              <p>
+                Geolocation is leveraged heavily in the delivery of all sorts of
+                packages. An armada of Amazon, UPS, FedEx vehicles are engaged
+                in a race against time to deliver all sorts of goods as quickly,
+                safely, and efficiently as possible.
+              </p>
+              <p>
+                Geolocation data is used to determine the most efficient routes,
+                and enable drivers to avoid potentially dangerous traffic
+                situations. Geolocation APIs also allow fleet services to
+                collect a wide selection of diagnostics such as mileage, speed,
+                and engine health, thereby limiting downtime per vehicle.
+              </p>
+            </article>
+            <article>
+              <h3>Anywhere crowds gather</h3>
+              <p>
+                Governments and organisations have long sought to develop tools
+                that prevent and manage emergency situations.
+              </p>
+              <p>
+                Crowd rushes, such as the Itaewon disaster in Seoul or the
+                Kanjuruhan Stadium disaster in Indonesia, both in 2022, are a
+                massive concern anytime large crowds gather. Geolocation tools
+                can help identify where crowd numbers are a concern before
+                reaching dangerous levels.
+              </p>
+              <p>
+                And in those cases where emergencies are unavoidable,
+                geolocation can be used by first responders to accurately
+                determine the location of incidents and calculate the best
+                routes to save time and lives.
+              </p>
+              <p>
+                Geolocation can also be utilised by police to identify patterns
+                and locate hot spots of criminal activity, thereby distributing
+                limited resources more efficiently.
+              </p>
+            </article>
+          </div>
+        </section>
 
-      <section id="geo-why">
-        <h2>Why would you use it?</h2>
-        <p>
-          Geolocation serves in a multitude of contexts. The government and police use it for security purposes, such as unmanned aerial vehicles (UAVs) or ankle bracelets, which — when you think about the fact that neither type of data collection is precise — raises some unsettling implications. But, on the lighter side, some companies use it to change the way we play games by combining it with augmented reality (interacting with virtual elements based on geolocation), like Ingress and Pokémon Go. It opens up the possibility for reviving Where in the World is Carmen Sandiego, Where’s Waldo, or even The Oregon Trail.
-        </p>
-        <p>
-          We use geolocation to plot courses, track elevation changes, see location history, find nearby tire shops, tag images on social media, check in to places, get the local weather, etc. We also use it every day to make our lives easier, to interact with other people, to solve problems, to set goals, to track anything.
-        </p>
-        <p>
-          Geolocation is so much a part of our lives already, and companies are sure to keep harnessing it to improve our online experiences:
-        </p>
-        <ul>
-          <li>A delivery food chain could use it for potential expansion by seeing how many people from a city or region visit its website.
-          </li>
-          <li>A hospital network could provide its closest emergency room to website visitors based on their locations.
-          </li>
-          <li>A global company could redirect all country-specific website visitors to country-specific pages.
-          </li>
-          <li>A city tourism organization could display location-based content depending on where website visitors are in the city.
-          </li>
-        </ul>
+        <section id="pros-cons">
+          <div class="pros-cons-container">
+            <article class="pros-cons">
+              <h3>Pros</h3>
+              <p>
+                Many of the pros of geolocation have been identified in the
+                sections above. Geolocation can be used in a wide variety of
+                contexts to deliver valuable, potentially lifesaving,
+                information quickly and efficiently. Further benefits of
+                geolocation include:
+              </p>
+              <h4>Ease of Implementation</h4>
+              <p>
+                Anyone can take advantage of geolocation since it only requires
+                that the user setup an HTTP call to an API endpoint.
+              </p>
+              <h4>Affordability</h4>
+              <p>
+                Many geolocation APIs do come with a fee. However, there are
+                also APIs that leverage open data, with OpenStreetMap,
+                OpenWeather, and Mapbox allowing users to make a pre-determined
+                number of free calls to the API after which charges kick in.
+              </p>
+              <h4>Flexibility</h4>
+              <p>
+                Geolocation APIs can be accessed on smartphones, PCs, a wide
+                variety of Apple products, and IoT devices. Most modern devices
+                that connect to the internet can take advantage of the benefits
+                of geolocation.
+              </p>
+            </article>
 
-        <p>
-          Whatever the purpose, companies will continue to use geolocation to improve their websites or marketing. As technology improves, the visitor engagement can only increase, making each visit more meaningful and effective than the last, simply based on a little thing like location. 
-        </p>
-      </section>
+            <article class="pros-cons">
+              <h3>Cons</h3>
+              <p>
+                As with any technology, benefits must be weighed against
+                potential downsides. Many of geolocation's benefits can become
+                disadvantages if the technology is used by the wrong people and
+                proper safeguards have not been enacted. The cons of geolocation
+                need to be carefully considered before developers implement its
+                use. Some of the most notable concerns include:
+              </p>
+              <h4>Privacy concerns</h4>
+              <p>
+                Many smartphone users have no idea how much of their location
+                information is available. Many less sophisticated users may be
+                unaware that they are being tracked at all.
+              </p>
+              <p>
+                But location data can reveal sensitive information. Providing
+                useful information all while staying safely within the bounds of
+                legality can be a big challenge.
+              </p>
+              <h4>Data breaches</h4>
+              <p>
+                Closely related to privacy concerns is the threat of data
+                breaches. With so much information being collected about so many
+                users, any large data breach runs the risk of harming large
+                numbers of unsuspecting uses.
+              </p>
+              <h4>Unwanted tracking</h4>
+              <p>
+                There have been instances where users' location data have been
+                used by stalkers and other malicious actors to locate
+                individuals who may not wish to have been found.. Users may
+                inadvertently be sharing data that makes them less safe, not
+                moreso.
+              </p>
+              <h4>Cost</h4>
+              <p>
+                While it may be cheap to implement a geolocation tool that calls
+                the API a limited number of times, for applications that will be
+                making a large number of calls, the fees can quickly add up.
+              </p>
+              <p>
+                Even those APIs that offer free services will start to require
+                subscriptions once calls start to exceed its minimum threshold.
+                If developers are creating an application that will be heavily
+                used, this potential expense should be considered.
+              </p>
+            </article>
+          </div>
+        </section>
 
-      <!-- Chris --------------------------------->
-
-      <section id="geo-where">
-        <h2>Where would you use it?</h2>
-        <div class="geo-where">
-        <!-- image source: https://www.pexels.com/search/package%20delivery/ -->
-        <img src="images/geolocation-delivery.jpg" alt="Boxes on a dolly are being loaded in a van">
-        <article>
-          <h3>Anywhere people want to play</h3>
-          <p> In 2016, many people may have never heard the term geolocation, but geolocated games burst onto the scene with the explosive popularity of Pokemon GO. 
-          </p>
-          <p>Geolocation allows people to embark upon virtual treasures hunts searching for characters that are in placed in the user's location. 
-          </p>
-          <p>Most, if not all, of these types of games rely on the use of mobile phones, and make use of geotagged locations (or features for which geographical identification metadata has been added). These geotagged locations and then placed inside a map interface with which the player interacts. 
-          </p>
-          <p>Other games that take advantage of geolocation APIs include Pikmin Bloom, Catan: World Explorers, Minecraft Earth, and Let's Hunt Monsters. 
-          </p>
-        </article>
-        <article>
-          <h3>Anywhere a package needs to be delivered</h3>
-          <p>It is no secret that since the start of the COVID-19 pandemic in 2020, delivery services have become an integral part of most peoples' lives. 
-          </p>
-          <p>Geolocation is leveraged heavily in the delivery of all sorts of packages.  An armada of Amazon, UPS, FedEx vehicles are engaged in a race against time to deliver all sorts of goods as quickly, safely, and efficiently as possible. 
-          </p>
-          <p>Geolocation data is used to determine the most efficient routes, and enable drivers to avoid potentially dangerous traffic situations. Geolocation APIs also allow fleet services to collect a wide selection of diagnostics such as mileage, speed, and engine health, thereby limiting downtime per vehicle. 
-          </p>
-        </article>
-        <article>
-          <h3>Anywhere crowds gather</h3>
-          <p>Governments and organisations have long sought to develop tools that prevent and manage emergency situations. 
-          </p>
-          <p>Crowd rushes, such as the Itaewon disaster in Seoul or the Kanjuruhan Stadium disaster in Indonesia, both in 2022, are a massive concern anytime large crowds gather. Geolocation tools can help identify where crowd numbers are a concern before reaching dangerous levels.</p>
-          <p>And in those cases where emergencies are unavoidable, geolocation can be used by first responders to accurately determine the location of incidents and calculate the best routes to save time and lives. 
-          </p>
-          <p>Geolocation can also be utilised by police to identify patterns and locate hot spots of criminal activity, thereby distributing limited resources more efficiently. </p>
-        </article>
-        </div>
-      </section>
-
-      <section id="pros-cons" class="content-item">
-        <h2>Pros and Cons</h2>
-        <article>
-          <!-- image source: https://www.pexels.com/search/package%20delivery/ -->
-          <img src="images/geolocation-delivery.jpg" alt="Boxes on a dolly are being loaded in a van">
-          <h3>Anywhere people want to play</h3>
-          <p> In 2016, many people may have never heard the term geolocation, but geolocated games burst onto the scene with the explosive popularity of Pokemon GO. 
-          </p>
-          <p>Geolocation allows people to embark upon virtual treasures hunts searching for characters that are in placed in the user's location. 
-          </p>
-          <p>Most, if not all, of these types of games rely on the use of mobile phones, and make use of geotagged locations (or features for which geographical identification metadata has been added). These geotagged locations and then placed inside a map interface with which the player interacts. 
-          </p>
-          <p>Other games that take advantage of geolocation APIs include Pikmin Bloom, Catan: World Explorers, Minecraft Earth, and Let's Hunt Monsters. 
-          </p>
-        </article>
-        <article>
-          <h3>Anywhere a package needs to be delivered</h3>
-          <p>It is no secret that since the start of the COVID-19 pandemic in 2020, delivery services have become an integral part of most peoples' lives. 
-          </p>
-          <p>Geolocation is leveraged heavily in the delivery of all sorts of packages.  An armada of Amazon, UPS, FedEx vehicles are engaged in a race against time to deliver all sorts of goods as quickly, safely, and efficiently as possible. 
-          </p>
-          <p>Geolocation data is used to determine the most efficient routes, and enable drivers to avoid potentially dangerous traffic situations. Geolocation APIs also allow fleet services to collect a wide selection of diagnostics such as mileage, speed, and engine health, thereby limiting downtime per vehicle. 
-          </p>
-        </article>
-        <article>
-          <h3>Anywhere crowds gather</h3>
-          <p>Governments and organisations have long sought to develop tools that prevent and manage emergency situations. 
-          </p>
-          <p>Crowd rushes, such as the Itaewon disaster in Seoul or the Kanjuruhan Stadium disaster in Indonesia, both in 2022, are a massive concern anytime large crowds gather. Geolocation tools can help identify where crowd numbers are a concern before reaching dangerous levels.</p>
-          <p>And in those cases where emergencies are unavoidable, geolocation can be used by first responders to accurately determine the location of incidents and calculate the best routes to save time and lives. 
-          </p>
-          <p>Geolocation can also be utilised by police to identify patterns and locate hot spots of criminal activity, thereby distributing limited resources more efficiently. </p>
-        </article>
-      </section>
-
-      <section id="pros-cons" class="content-item">
-        <h2>Pros and Cons</h2>
-        <article>
-          <h3>Pros</h3>
-          <p>Many of the pros of geolocation have been identified in the sections above. Geolocation can be used in a wide variety of contexts to deliver valuable, potentially lifesaving, information quickly and efficiently. Further benefits of geolocation include:</p>
-          <h4>Ease of Implementation</h4>
-          <p>Anyone can take advantage of geolocation since it only requires that the user setup an HTTP call to an API endpoint.</p>
-          <h4>Affordability</h4>
-          <p>Many geolocation APIs do come with a fee. However, there are also APIs that leverage open data, with OpenStreetMap, OpenWeather, and Mapbox allowing users to make a pre-determined number of free calls to the API after which charges kick in. 
-          </p>
-          <h4>Flexibility</h4>
-          <p>Geolocation APIs can be accessed on smartphones, PCs, a wide variety of Apple products, and IoT devices. Most modern devices that connect to the internet can take advantage of the benefits of geolocation. 
-          </p>
-        </article>
-        <article>
-          <h3>Cons</h3>
-          <p>As with any technology, benefits must be weighed against potential downsides. Many of geolocation's benefits can become disadvantages if the technology is used by the wrong people and proper safeguards have not been enacted. The cons of geolocation need to be carefully considered before developers implement its use. Some of the most notable concerns include:</p>
-          <h4>Privacy concerns</h4>
-          <p>Many smartphone users have no idea how much of their location information is available. Many less sophisticated users may be unaware that they are being tracked at all.</p>
-          <p>But location data can reveal sensitive information. Providing useful information all while staying safely within the bounds of legality can be a big challenge.</p>
-          <h4>Data breaches</h4>
-          <p>Closely related to privacy concerns is the threat of data breaches. With so much information being collected about so many users, any large data breach runs the risk of harming large numbers of unsuspecting uses. </p>
-          <h4>Unwanted tracking</h4>   
-          <p>There have been instances where users' location data have been used by stalkers and other malicious actors to locate individuals who may not wish to have been found.. Users may inadvertently be sharing data that makes them less safe, not moreso. </p>   
-          <h4>Cost</h4> 
-          <p>While it may be cheap to implement a geolocation tool that calls the API a limited number of times, for applications that will be making a large number of calls, the fees can quickly add up. </p>
-          <p>Even those APIs that offer free services will start to require subscriptions once calls start to exceed its minimum threshold. If developers are creating an application that will be heavily used, this potential expense should be considered.
-          </p>
-        </article>
-      </section>
-    
-
-      <section class="code-demo">
-
-      </section>
-
+        <section class="code-demo"></section>
+      </div>
       <!-- Stanley --------------------------------->
 
-      <section id="geo-ref">
+      <section id="geo-ref" class="geo-ref">
         <h2>References</h2>
-    
-        <li><p>https://www.youtube.com/watch?v=QhdvIJ_qlFQ Geolocation by Google</p></li>
-        <li><p>https://www.youtube.com/watch?v=Msbt88ifVdo IpLocation and how it works</p></li>
-        <li><p>https://www.youtube.com/watch?v=916M64DuRnk Using Geolocation API by dcode</p></li>
-        <li><p>https://aws.amazon.com/what-is/api/ What is an API</p></li>
-        <li><p>https://www.geoapify.com/what-is-geolocation What is Geolocation by Geoapify</p></li>
-        <li><p>https://www.headspin.io/blog/a-closer-look-at-gps-geolocation-and-ip-geolocation Closer look by Headspin</p></li>
-        <li><p>https://www.worldexcellence.com/geolocation-tracking-risk/#Stalking Cons by worldexcellence</p></li>
-        <li><p>https://medium.com/@ma0103601/understanding-the-pros-and-cons-of-gps-monitoring-f463ae3ed8de  Pros & Cons by Medium</p></li>
-        <li><p>https://www.gravitatedesign.com/blog/what-is-geolocation/ What is Geolocation by gravitatedesign</p></li>
+        <div class="ref-container">
+          <li>
+            <a
+              target="_blank"
+              href="https://www.youtube.com/watch?v=QhdvIJ_qlFQ"
+              >Geolocation by Google</a
+            >
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://www.youtube.com/watch?v=Msbt88ifVdo"
+              >IpLocation and how it works</a
+            >
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://www.youtube.com/watch?v=916M64DuRnk"
+              >Using Geolocation API by dcode</a
+            >
+          </li>
+          <li>
+            <a target="_blank" href="https://aws.amazon.com/what-is/api/"
+              >What is an API</a
+            >
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://www.geoapify.com/what-is-geolocation"
+              >What is Geolocation by Geoapify</a
+            >
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://www.headspin.io/blog/a-closer-look-at-gps-geolocation-and-ip-geolocation"
+              >Closer look by Headspin</a
+            >
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://www.worldexcellence.com/geolocation-tracking-risk/#Stalking"
+              >Cons by worldexcellence</a
+            >
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://medium.com/@ma0103601/understanding-the-pros-and-cons-of-gps-monitoring-f463ae3ed8de"
+              >Pros & Cons by Medium</a
+            >
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://www.gravitatedesign.com/blog/what-is-geolocation/"
+              >What is Geolocation by gravitatedesign</a
+            >
+          </li>
+        </div>
       </section>
-    </div>
     </main>
 
-    <footer>
-      <p>&copy; FWD 2024</p>
-      <p>Ian D'souza, Chris Hoornaert, Stanley Wong, Priya Tyagi</p>
+    <footer class="footer">
+      <h2>&copy; FWD 2024</h2>
+      <h2>Ian D'souza, Chris Hoornaert, Stanley Wong, Priya Tyagi</h2>
     </footer>
     <script src="scripts/navigation.js"></script>
   </body>
