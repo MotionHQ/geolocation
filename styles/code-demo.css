@@ -205,6 +205,16 @@ h6 {
   background-color: #62a1c7;
 }
 
+.current-weather p {
+  background-color: #fee953;
+  color: #1f3d73;
+  padding: 10px 10px;
+  font-size: 1.5rem;
+  font-family: "rift", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  width: 50%;
+}
 /* Styling for current weather section */
 .current-weather {
   margin: 20px;
@@ -218,7 +228,9 @@ h6 {
   background-attachment: fixed;
   background-size: cover;
   margin-bottom: 10rem;
-  text-align: justify;
+  position: relative;
+  backdrop-filter: blur(10px);
+  z-index: 1;
 }
 
 .current-weather h2 {
@@ -228,15 +240,21 @@ h6 {
   background-color: #1f3d73;
 }
 
+.current-weather::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  backdrop-filter: blur(5px);
+  z-index: -1;
+}
+
+.current-weather h2,
 .current-weather p {
-  background-color: #fee953;
-  color: #1f3d73;
-  padding: 10px 10px;
-  font-size: 1.5rem;
-  font-family: "rift", Arial, Helvetica, sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  width: 50%;
+  position: relative;
+  z-index: 1;
 }
 
 .footer {
@@ -254,36 +272,35 @@ h6 {
   padding: 0;
 }
 
-/* Add this media query at the end of your CSS code */
 @media (max-width: 800px) {
   body {
     margin: 0;
-    font-size: 0.8rem; /* Adjust the font size for better readability on smaller screens */
+    font-size: 0.8rem;
   }
 
   .site-header {
-    padding: 0.5rem; /* Reduce padding for the header */
+    padding: 0.5rem;
   }
 
   .site-header h2 {
-    font-size: 1.5rem; /* Adjust header font size */
+    font-size: 1.5rem;
   }
 
   .site-navigation ul {
-    top: 3rem; /* Adjust top position of the navigation menu */
+    top: 3rem;
   }
 
   .container {
-    flex-basis: 100%; /* Make containers full width on smaller screens */
+    flex-basis: 100%;
     width: 100%;
-    margin-bottom: 10px; /* Reduce margin bottom for containers */
+    margin-bottom: 10px;
   }
 
   .current-weather {
-    width: 100%; /* Make current weather section full width */
-    margin: 10px 0; /* Adjust margin for better spacing */
-    padding: 10px; /* Reduce padding for current weather section */
-    font-size: 0.9rem; /* Adjust font size for better readability */
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 0.9rem;
   }
 
   .current-weather h2 {

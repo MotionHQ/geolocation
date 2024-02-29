@@ -20,11 +20,7 @@ body {
   font-size: 1rem;
   line-height: 1.5;
   color: #ffffff;
-  background-image: url(../images/cloud-bg.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-  background-size: cover;
+  background-color: #1f3d73;
 }
 h1,
 h2,
@@ -175,11 +171,53 @@ a:focus {
 
 /* Main
 --------------------------------------------- */
+/*  Ian  */
+
 .main-style {
-  margin-top: 8rem;
+  margin-top: 9rem;
+}
+
+.main-style h1 {
+  font-size: 2rem;
+  background-color: #1f3d73;
+  color: #fee953;
+  text-align: center;
+}
+
+.content-container h2,
+.content-container h3,
+.content-container h4 {
+  background-color: #fee953;
+}
+
+.geo-ref h2 {
+  background-color: #fee953;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fee953;
+}
+
+.footer h2 {
+  margin: 0;
+  padding: 10px;
+}
+
+.footer p {
+  padding: 0;
 }
 
 @media (min-width: 50em) {
+  body {
+    background-image: url(../images/cloud-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
   .main-style {
     margin: 0rem 2rem 0 22rem;
   }
@@ -199,9 +237,6 @@ a:focus {
 
   .main-style h1 {
     font-size: 5rem;
-    background-color: #1f3d73;
-    color: #fee953;
-    text-align: center;
   }
 
   .content-container {
