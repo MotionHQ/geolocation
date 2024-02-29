@@ -1,0 +1,144 @@
+body {
+  font-family: "darkmode-off", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #ffffff;
+  background-image: url(../images/cloud-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 0rem 2rem 0 22rem;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "rift", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.25rem;
+  color: #1f3d73;
+}
+
+/*  Navigation  */
+
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: #1f3d73;
+  width: 100%;
+  padding: 0 1rem;
+  display: flex;
+  gap: 25rem;
+  align-items: center;
+}
+
+.site-header h2 {
+  color: #fee953;
+  font-size: 2.5rem;
+}
+
+.site-navigation ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: none;
+  position: absolute;
+  top: 4.5rem;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  background-color: #1f3d73;
+}
+
+.site-navigation.toggled ul {
+  display: block;
+}
+
+.site-navigation a {
+  display: block;
+  padding: 2rem;
+  font-family: "rift", Georgia, Times, sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 2.1rem;
+  text-decoration: none;
+  color: #fee953;
+}
+
+.menu-toggle {
+  display: block;
+  background-color: transparent;
+  border: 0;
+  padding: 1rem;
+}
+
+.menu-toggle:focus {
+  border: 0;
+  outline: 1px dotted;
+}
+
+@media (min-width: 50em) {
+  .menu-toggle {
+    display: none;
+  }
+
+  .site-header {
+    height: 100%;
+    width: 20rem;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    display: block;
+  }
+
+  .site-header h2 {
+    font-size: 3rem;
+    text-shadow: 2px 1px #1f3d73;
+  }
+
+  .site-navigation ul,
+  .site-navigation.toggled ul {
+    display: block;
+
+    background-color: #1f3d73;
+    margin-top: 2rem;
+    margin-left: 1rem;
+  }
+
+  .site-navigation a {
+    padding: 0.75rem;
+    font-size: 1.5rem;
+    color: #ffffff;
+  }
+  .site-navigation a:hover {
+    color: #1f3d73;
+    background-color: #fee953;
+  }
+}
+
+.title {
+  background-color: #1f3d73;
+  color: #fee953;
+  font-size: 5rem;
+  text-align: center;
+}
+
+.demo-intro h2 {
+  font-size: 2rem;
+  background-color: #fee953;
+  text-align: center;
+}
+
+.demo-intro h3 {
+  font-size: 1.5rem;
+  background-color: #fee953;
+}
