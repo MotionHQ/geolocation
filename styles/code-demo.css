@@ -189,7 +189,8 @@ h6 {
 }
 
 /* Style for buttons */
-.buttons {
+.buttons,
+#restart-button {
   margin: 0 10px;
   padding: 10px 20px;
   border: none;
@@ -222,12 +223,13 @@ h6 {
   padding: 20px;
   border: 5px solid #fee953;
   border-radius: 5px;
-  width: 50%;
+  width: 90%;
   background-image: url(../images/cloud-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
+  background-position: center 100%;
   margin-bottom: 10rem;
   position: relative;
   backdrop-filter: blur(10px);
@@ -305,17 +307,17 @@ h6 {
   }
 
   .current-weather h2 {
-    font-size: 3rem; /* Adjust heading font size */
+    font-size: 3rem;
   }
 
   .current-weather p {
-    font-size: 0.9rem; /* Adjust paragraph font size */
-    width: 100%; /* Make paragraphs full width */
+    font-size: 0.9rem;
+    width: 100%;
   }
 
   .footer {
-    flex-direction: column; /* Change footer layout to column */
-    align-items: center; /* Center align footer content */
+    flex-direction: column;
+    align-items: center;
   }
 
   .footer h2,
