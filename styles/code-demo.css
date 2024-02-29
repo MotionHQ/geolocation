@@ -141,4 +141,115 @@ h6 {
 .demo-intro h3 {
   font-size: 1.5rem;
   background-color: #fee953;
+  text-align: center;
+}
+
+.container {
+  background-color: #1f3d73;
+  width: 30%;
+}
+
+.container p {
+  padding: 1rem;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+/* Individual containers inside the flex container */
+.container {
+  flex: 1 1 30%;
+  margin-bottom: 20px;
+}
+
+/* Flex container for buttons and current weather */
+.demo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1f3d73;
+}
+
+.view h3 {
+  color: #1f3d73;
+  background-color: #fee953;
+  margin: 0;
+  text-align: center;
+  font-size: 2rem;
+}
+
+/* Buttons container */
+.button-container {
+  margin-bottom: 20px;
+}
+
+/* Style for buttons */
+.buttons {
+  margin: 0 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #fee953;
+  color: #1f3d73;
+  cursor: pointer;
+  font-family: "rift", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.buttons:hover {
+  background-color: #62a1c7;
+}
+
+/* Styling for current weather section */
+.current-weather {
+  margin: 20px;
+  padding: 20px;
+  border: 5px solid #fee953;
+  border-radius: 5px;
+  width: 50%;
+  background-image: url(../images/cloud-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  margin-bottom: 10rem;
+  text-align: justify;
+}
+
+.current-weather h2 {
+  font-size: 5rem;
+  color: #fee953;
+  text-align: center;
+  background-color: #1f3d73;
+}
+
+.current-weather p {
+  background-color: #fee953;
+  color: #1f3d73;
+  padding: 10px 10px;
+  font-size: 1.5rem;
+  font-family: "rift", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  width: 50%;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fee953;
+}
+
+.footer h2 {
+  margin: 0;
+  padding: 10px;
+}
+
+.footer p {
+  padding: 0;
 }
