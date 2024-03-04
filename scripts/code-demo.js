@@ -95,6 +95,7 @@ googleLocation.addEventListener('click', () => {
     getUserLocation(); 
     // Hide the "See how it Works!" button
     googleLocation.style.visibility = 'hidden';
+   
     // Show the weather section
     document.getElementById('current-weather').style.display = 'block';
     // Delay the visibility of the "Try again" button

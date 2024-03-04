@@ -12,7 +12,8 @@ body {
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
-  margin: 0rem 2rem 0 22rem;
+  margin: 0rem 2rem 0rem 22rem;
+ 
 }
 h1,
 h2,
@@ -38,7 +39,7 @@ h6 {
   width: 100%;
   padding: 0 1rem;
   display: flex;
-  gap: 25rem;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -50,7 +51,7 @@ h6 {
 .site-navigation ul {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin:1rem 0;
   display: none;
   position: absolute;
   top: 4.5rem;
@@ -67,6 +68,7 @@ h6 {
 .site-navigation a {
   display: block;
   padding: 2rem;
+ 
   font-family: "rift", Georgia, Times, sans-serif;
   font-weight: 700;
   font-style: italic;
@@ -131,6 +133,7 @@ h6 {
   color: #fee953;
   font-size: 5rem;
   text-align: center;
+  margin-top: 5.7rem;
 }
 
 .demo-intro h2 {
@@ -164,7 +167,7 @@ h6 {
 /* Individual containers inside the flex container */
 .container {
   flex: 1 1 30%;
-  margin-bottom: 20px;
+  margin-bottom: 20p;
 }
 
 /* Flex container for buttons and current weather */
@@ -173,6 +176,9 @@ h6 {
   flex-direction: column;
   align-items: center;
   background-color: #1f3d73;
+}
+.demo-container p{
+  padding: 1rem;
 }
 
 .view h3 {
@@ -234,6 +240,7 @@ h6 {
   position: relative;
   backdrop-filter: blur(10px);
   z-index: 1;
+  display: none;
 }
 
 .current-weather h2 {
