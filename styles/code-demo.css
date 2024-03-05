@@ -1,0 +1,336 @@
+body {
+  font-family: "darkmode-off", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #ffffff;
+  /* background-image: url(../images/cloud-bg.jpg); */
+  background-color: #62a1c7;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 0rem 2rem 0rem 22rem;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "rift", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.25rem;
+  color: #1f3d73;
+}
+
+/*  Navigation  */
+
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: #1f3d73;
+  width: 100%;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-header h2 {
+  color: #fee953;
+  font-size: 2.5rem;
+  padding-left: 1rem;
+}
+
+.site-navigation ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+  display: none;
+  position: absolute;
+  top: 4.5rem;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  background-color: #1f3d73;
+}
+
+.site-navigation.toggled ul {
+  display: block;
+}
+
+.site-navigation a {
+  display: block;
+  padding: 2rem;
+
+  font-family: "rift", Georgia, Times, sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 2.1rem;
+  text-decoration: none;
+  color: #fee953;
+}
+
+.menu-toggle {
+  display: block;
+  background-color: transparent;
+  border: 0;
+  padding: 1rem;
+}
+
+.menu-toggle:focus {
+  border: 0;
+  outline: 1px dotted;
+}
+
+@media (min-width: 50em) {
+  .menu-toggle {
+    display: none;
+  }
+
+  .site-header {
+    height: 100%;
+    width: 20rem;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    display: block;
+  }
+
+  .site-header h2 {
+    font-size: 3rem;
+    text-shadow: 2px 1px #1f3d73;
+  }
+
+  .site-navigation ul,
+  .site-navigation.toggled ul {
+    display: block;
+
+    background-color: #1f3d73;
+    margin-top: 2rem;
+    margin-left: 1rem;
+  }
+
+  .site-navigation a {
+    padding: 0.75rem;
+    font-size: 1.5rem;
+    color: #ffffff;
+  }
+  .site-navigation a:hover {
+    color: #1f3d73;
+    background-color: #fee953;
+  }
+}
+
+.title {
+  background-color: #1f3d73;
+  color: #fee953;
+  font-size: 5rem;
+  text-align: center;
+  margin-top: 5.7rem;
+}
+
+.demo-intro h2 {
+  font-size: 2rem;
+  background-color: #fee953;
+  text-align: center;
+}
+
+.demo-intro h3 {
+  font-size: 1.5rem;
+  background-color: #fee953;
+  text-align: center;
+}
+
+.container {
+  background-color: #1f3d73;
+  width: 30%;
+}
+
+.container p {
+  padding: 1rem;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+/* Individual containers inside the flex container */
+.container {
+  flex: 1 1 30%;
+  margin-bottom: 20p;
+}
+
+/* Flex container for buttons and current weather */
+.demo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1f3d73;
+}
+.demo-container p {
+  padding: 1rem;
+}
+
+.view h3 {
+  color: #1f3d73;
+  background-color: #fee953;
+  margin: 0;
+  text-align: center;
+  font-size: 2rem;
+}
+
+/* Buttons container */
+.button-container {
+  margin-bottom: 20px;
+}
+
+/* Style for buttons */
+.buttons,
+#restart-button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #fee953;
+  color: #1f3d73;
+  cursor: pointer;
+  font-family: "rift", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.buttons:hover {
+  background-color: #62a1c7;
+}
+
+.current-weather p {
+  background-color: #fee953;
+  color: #1f3d73;
+  padding: 10px 10px;
+  font-size: 1.5rem;
+  font-family: "rift", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  width: 50%;
+}
+/* Styling for current weather section */
+.current-weather {
+  margin: 20px;
+  padding: 20px;
+  border: 5px solid #fee953;
+  border-radius: 5px;
+  width: 90%;
+  background-image: url(../images/cloud-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center 100%;
+  margin-bottom: 10rem;
+  position: relative;
+  backdrop-filter: blur(10px);
+  z-index: 1;
+  display: none;
+}
+
+.current-weather h2 {
+  font-size: 5rem;
+  color: #fee953;
+  text-align: center;
+  background-color: #1f3d73;
+}
+
+.current-weather::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  backdrop-filter: blur(5px);
+  z-index: -1;
+}
+
+.current-weather h2,
+.current-weather p {
+  position: relative;
+  z-index: 1;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fee953;
+}
+
+.footer h2 {
+  margin: 0;
+  padding: 10px;
+}
+
+.footer p {
+  padding: 0;
+}
+
+@media (max-width: 800px) {
+  body {
+    margin: 0;
+    font-size: 0.8rem;
+  }
+
+  .site-header {
+    padding: 0.5rem;
+  }
+
+  .site-header h2 {
+    font-size: 1.5rem;
+  }
+
+  .site-navigation ul {
+    top: 3rem;
+  }
+
+  .container {
+    flex-basis: 100%;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .current-weather {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  .current-weather h2 {
+    font-size: 3rem;
+  }
+
+  .current-weather p {
+    font-size: 0.9rem;
+    width: 100%;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer h2,
+  .footer p {
+    margin: 0.5rem 0; /* Adjust margin for footer elements */
+    padding: 5px; /* Add padding for footer elements */
+    text-align: center; /* Center align footer text */
+  }
+}

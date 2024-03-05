@@ -1,19 +1,9 @@
 /*--------------------------------------------------------------
->>> TABLE OF CONTENTS:
-----------------------------------------------------------------
 # Generic (CALLED IN ANOTHER FILE)
-	- Normalize
-	- Box sizing
-	- Media width
-# Base
-	- Typography
-	- Elements
-	- Links
-# Layouts
-# Components
-	- Header
-	- Main
-	- Footer
+----------------------------------------------------------------
+- Normalize
+- Box sizing
+- Media width
 --------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
@@ -24,57 +14,59 @@
 --------------------------------------------- */
 
 body {
-    font-family: "Montserrat", Arial, Helvetica, sans-serif;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #282828;
-    background-color: #62a1c7;
-  }
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-family: "Kalnia", "Times New Roman", Times, serif;
-    margin: 0.5em 0;
-    font-size: 1.75rem;
-  }
-  p {
-    margin: 0 0 1.5em;
-  }
+  font-family: "darkmode-off", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #ffffff;
+  background-color: #1f3d73;
+  padding: 1rem;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "rift", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.25rem;
+  color: #1f3d73;
+}
 
-  /* Elements
+/* Elements
   --------------------------------------------- */
-  section {
-    padding: 0 1rem;
-  }
-  /* Links
-  --------------------------------------------- */
-  a,
-  a:visited {
-    text-decoration: none;
-    color: #6c8be9;
-  }
-  a:hover,
-  a:focus {
-    color: #ec8d8d;
-  }
-  a:active {
-    text-decoration: underline;
-    color: #ec8d8d;
-  }
-  a:focus {
-    outline: 2px dotted #000000;
-  }
 
+img {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* Links
+  --------------------------------------------- */
+a,
+a:visited {
+  text-decoration: none;
+  color: #ffffff;
+}
+a:hover,
+a:focus {
+  color: #fee953;
+}
+a:active {
+  text-decoration: underline;
+  color: #fee953;
+}
+a:focus {
+  outline: 2px solid #fee953;
+}
 
 /*--------------------------------------------------------------
 # Layout
 --------------------------------------------------------------*/
-
-
 
 /*--------------------------------------------------------------
 # Components
@@ -82,29 +74,349 @@ body {
 
 /* Header
 --------------------------------------------- */
-/*  Priya */
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: #1f3d73;
+  width: 100%;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
+.site-header h2 {
+  color: #fee953;
+  font-size: 2.5rem;
+}
+
+.site-navigation ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+  display: none;
+  position: absolute;
+  top: 4.5rem;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  background-color: #1f3d73;
+}
+
+.site-navigation.toggled ul {
+  display: block;
+}
+
+.site-navigation a {
+  display: block;
+  padding: 2rem;
+  font-family: "rift", Georgia, Times, sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 2.1rem;
+  text-decoration: none;
+  color: #fee953;
+}
+
+.menu-toggle {
+  display: block;
+  background-color: transparent;
+  border: 0;
+  padding: 1rem;
+}
+
+.menu-toggle:focus {
+  border: 0;
+  outline: 1px dotted;
+}
+
+@media (min-width: 50em) {
+  .menu-toggle {
+    display: none;
+  }
+
+  .site-header {
+    height: 100%;
+    width: 20rem;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    display: block;
+  }
+
+  .site-header h2 {
+    font-size: 3rem;
+    text-shadow: 2px 1px #1f3d73;
+  }
+
+  .site-navigation ul,
+  .site-navigation.toggled ul {
+    display: block;
+    background-color: #1f3d73;
+    margin-top: 2rem;
+    margin-left: 1rem;
+  }
+
+  .site-navigation a {
+    padding: 0.75rem;
+    font-size: 1.5rem;
+    color: #ffffff;
+  }
+  .site-navigation a:hover {
+    color: #1f3d73;
+    background-color: #fee953;
+  }
+}
 
 /* Main
 --------------------------------------------- */
-
 /*  Ian  */
 
+.main-style {
+  margin-top: 9rem;
+}
 
-/*  Stanley */
+.main-style h1 {
+  font-size: 2rem;
+  background-color: #1f3d73;
+  color: #fee953;
+  text-align: center;
+}
 
+.content-container h2,
+.content-container h3,
+.content-container h4 {
+  background-color: #fee953;
+}
 
-/*  Priya  */
+.geo-ref h2 {
+  background-color: #fee953;
+}
 
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fee953;
+}
 
-/*  Chris  */
+.footer h2 {
+  margin: 0;
+  padding: 10px;
+}
 
+.footer p {
+  padding: 0;
+}
+
+@media (min-width: 50em) {
+  body {
+    background-image: url(../images/cloud-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center 100%;
+  }
+
+  .main-style {
+    margin: 0rem 2rem 0 22rem;
+  }
+
+  .main-style h2 {
+    font-size: 1.5rem;
+  }
+
+  .main-style p {
+    font-size: 1rem;
+    padding: 0rem 1.5rem 0rem 1.5rem;
+  }
+
+  .site-header h2 {
+    padding-left: 1rem;
+  }
+
+  .main-style h1 {
+    font-size: 5rem;
+  }
+
+  .content-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .group-1 {
+    flex: 1;
+    color: #ffffff;
+    background-color: #1f3d73;
+    margin: 0;
+  }
+
+  .group-1 h2 {
+    color: #1f3d73;
+    background-color: #fee953;
+    margin: 0;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+  }
+
+  p {
+    padding: 20px;
+  }
+
+  #geo-why {
+    background-color: #1f3d73;
+  }
+
+  #geo-why,
+  #geo-where,
+  .pros-cons,
+  #geo-ref {
+    background-color: #1f3d73;
+  }
+
+  section h2 {
+    background-color: #fee953;
+    margin: 0;
+    padding: 10px;
+  }
+
+  .geo-where {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+  }
+
+  #geo-where h2 {
+    text-align: center;
+  }
+
+  #geo-where h3 {
+    background-color: #fee953;
+    margin: 0;
+    padding: 10px;
+    font-size: 1.25rem;
+    text-align: center;
+  }
+
+  .geo-where img {
+    flex: 1;
+    width: 100%;
+  }
+
+  .geo-where > * {
+    flex-basis: calc(50% - 0rem);
+    margin: 0;
+  }
+
+  .geo-where img {
+    flex: 1;
+    width: 50%;
+    height: 25rem;
+    object-fit: none;
+  }
+
+  .pros-cons-container h3 {
+    color: #1f3d73;
+    background-color: #fee953;
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 10px 20px;
+    text-align: center;
+  }
+
+  .pros-cons-container h4 {
+    color: #ffffff;
+    margin-left: 1.5rem;
+  }
+
+  .pros-cons-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 1.5rem;
+  }
+
+  .pros-cons-img {
+    margin: 1.5rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }
+
+  .geo-ref li {
+    padding: 1rem;
+  }
+
+  .geo-ref a {
+    padding: 1rem;
+  }
+
+  .pros-cons h4 {
+    color: #1f3d73;
+    padding-left: 20px;
+  }
+
+  li::marker {
+    color: #fee953;
+  }
+
+  .footer {
+    margin: 0 2rem 0 22rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fee953;
+  }
+
+  .footer h2 {
+    margin: 0;
+    padding: 10px;
+  }
+
+  .footer p {
+    padding: 0;
+  }
+
+  /* Bottom of 50em media query */
+}
 
 /*   Stanley  */
 
+/*  Priya  */
 
+/*  Chris  */
+.demo-intro {
+  margin: 2rem 1rem;
+}
+#restart-button {
+  visibility: hidden;
+}
 
-/* Footer
---------------------------------------------- */
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
 
+.buttons {
+  /* Add styles for your buttons */
+  margin: 0 5px; /* Add some spacing between buttons if needed */
+}
 
+#current-weather {
+  visibility: hidden;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border: #000000 solid 3px;
+  border-radius: 10px;
+  max-width: 17.5rem;
+}
+
+@media (min-width: 37.5rem) {
+  .current-weather {
+    max-width: 50%;
+  }
+}
