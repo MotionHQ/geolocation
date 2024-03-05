@@ -287,6 +287,7 @@ a:focus {
   .geo-where {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 1.5rem;
   }
 
   #geo-where h2 {
@@ -313,8 +314,9 @@ a:focus {
 
   .geo-where img {
     flex: 1;
-    max-width: 15.625rem;
-    max-height: 23.4375rem;
+    width: 50%;
+    height: 25rem;
+    object-fit: none;
   }
 
   .pros-cons-container h3 {
@@ -338,7 +340,11 @@ a:focus {
   }
 
   .pros-cons-img {
-    margin-bottom: 1rem;
+    margin: 1.5rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
   }
 
   .geo-ref li {

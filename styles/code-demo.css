@@ -13,7 +13,6 @@ body {
   background-attachment: fixed;
   background-size: cover;
   margin: 0rem 2rem 0rem 22rem;
- 
 }
 h1,
 h2,
@@ -46,12 +45,13 @@ h6 {
 .site-header h2 {
   color: #fee953;
   font-size: 2.5rem;
+  padding-left: 1rem;
 }
 
 .site-navigation ul {
   list-style: none;
   padding: 0;
-  margin:1rem 0;
+  margin: 1rem 0;
   display: none;
   position: absolute;
   top: 4.5rem;
@@ -68,7 +68,7 @@ h6 {
 .site-navigation a {
   display: block;
   padding: 2rem;
- 
+
   font-family: "rift", Georgia, Times, sans-serif;
   font-weight: 700;
   font-style: italic;
@@ -177,7 +177,7 @@ h6 {
   align-items: center;
   background-color: #1f3d73;
 }
-.demo-container p{
+.demo-container p {
   padding: 1rem;
 }
 
