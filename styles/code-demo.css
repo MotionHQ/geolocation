@@ -50,7 +50,7 @@ h6 {
 
 .site-navigation ul {
   list-style: none;
-  padding: 0;
+  padding: 0 1rem 1rem 1rem;
   margin: 1rem 0;
   display: none;
   position: absolute;
@@ -67,14 +67,13 @@ h6 {
 
 .site-navigation a {
   display: block;
-  padding: 2rem;
-
+  padding: 0rem;
   font-family: "rift", Georgia, Times, sans-serif;
   font-weight: 700;
   font-style: italic;
-  font-size: 2.1rem;
+  font-size: 1.5rem;
   text-decoration: none;
-  color: #fee953;
+  color: #ffffff;
 }
 
 .menu-toggle {
@@ -87,6 +86,14 @@ h6 {
 .menu-toggle:focus {
   border: 0;
   outline: 1px dotted;
+}
+
+.title {
+  background-color: #1f3d73;
+  color: #fee953;
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 5.7rem;
 }
 
 @media (min-width: 50em) {
@@ -118,7 +125,7 @@ h6 {
   }
 
   .site-navigation a {
-    padding: 0.75rem;
+    padding: 1.5rem;
     font-size: 1.5rem;
     color: #ffffff;
   }
@@ -126,14 +133,12 @@ h6 {
     color: #1f3d73;
     background-color: #fee953;
   }
-}
 
-.title {
-  background-color: #1f3d73;
-  color: #fee953;
-  font-size: 5rem;
-  text-align: center;
-  margin-top: 5.7rem;
+  .title {
+    font-size: 5rem;
+    text-align: center;
+    margin-top: 5.7rem;
+  }
 }
 
 .demo-intro h2 {
@@ -329,8 +334,8 @@ h6 {
 
   .footer h2,
   .footer p {
-    margin: 0.5rem 0; /* Adjust margin for footer elements */
-    padding: 5px; /* Add padding for footer elements */
-    text-align: center; /* Center align footer text */
+    margin: 0.5rem 0;
+    padding: 5px;
+    text-align: center;
   }
 }
