@@ -159,10 +159,11 @@ a:focus {
     background-color: #1f3d73;
     margin-top: 3rem;
     margin-left: 1rem;
+    overflow: hidden;
   }
 
   .site-navigation a {
-    padding: 1.5rem;
+    padding: 0.5rem;
     font-size: 1.5rem;
     color: #ffffff;
   }
