@@ -86,6 +86,7 @@ h6 {
 .menu-toggle:focus {
   border: 0;
   outline: 1px dotted;
+  color: #fee953;
 }
 
 .title {
@@ -106,8 +107,8 @@ h6 {
     width: 20rem;
     top: 0;
     left: 0;
-    overflow-x: hidden;
     display: block;
+    position: fixed;
   }
 
   .site-header h2 {
@@ -118,9 +119,8 @@ h6 {
   .site-navigation ul,
   .site-navigation.toggled ul {
     display: block;
-
     background-color: #1f3d73;
-    margin-top: 2rem;
+    margin-top: 3rem;
     margin-left: 1rem;
   }
 

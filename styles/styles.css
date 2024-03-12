@@ -130,6 +130,7 @@ a:focus {
 .menu-toggle:focus {
   border: 0;
   outline: 1px dotted;
+  color: #fee953;
 }
 
 @media (min-width: 50em) {
@@ -144,6 +145,7 @@ a:focus {
     left: 0;
     overflow-x: hidden;
     display: block;
+    position: fixed;
   }
 
   .site-header h2 {
